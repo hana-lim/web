@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+ /* 본문타이틀 및 페이지경로 */ 
+.clearfix {width:100%;}
+.clearfix:after {content:"";display:block;visibility:hidden;clear:both;}
+  
+  #svisual{display:block;position:relative;width:100%;height:162px;z-index:0;}	
+  #svisual .bg_visual{display:block;position:relative;width:100%;height:162px; z-index:10; 	}	
+  #svisual .bg_visual.bg_sub{background:url('/hsidc/gmi/bus/sub_visual.jpg') no-repeat center top;}
+
+	
+  #body_head_outer { padding:0px; z-index:111; width:1250px; margin:-162px auto 0px auto; padding:0px; height:162px;}	
+    .body_head{ position:relative;margin-bottom:25px;width:100%;}
+    
+	
+.body_head h2 { display:block; line-height:35px; color:#fff; font-size:250%; font-weight:600; width:100%; margin:0px auto; text-align:left; padding:64px 0px 20px 73px; letter-spacing:-3px;}
+
+  #section1 .body_head h2 { background:url('/hsidc/gmi/bus/h2_icon01.png') no-repeat;}
+  #section2 .body_head h2 { background:url('/hsidc/gmi/bus/h2_icon02.png') no-repeat;}
+  #section3 .body_head h2 { background:url('/hsidc/gmi/bus/h2_icon03.png') no-repeat;}
+  #section4 .body_head h2 { background:url('/hsidc/gmi/bus/h2_icon04.png') no-repeat;}
+  #section5 .body_head h2 { background:url('/hsidc/gmi/bus/h2_icon05.png') no-repeat;}
+  #section6 .body_head h2 { background:url('/hsidc/gmi/bus/h2_icon06.png') no-repeat;}
+	
+  #section1 .body_head h2,
+  #section2 .body_head h2	,
+  #section3 .body_head h2,
+  #section4 .body_head h2,
+  #section5 .body_head h2,
+  #section6 .body_head h2 { background-position:5px 59px;   }
+
+	  /* 페이지경로*/   
+      #location { display:inline-block; position:absolute; top:235px; right:0; height:17px; padding-right:40px; z-index:11; margin:0px; padding:0px;  }	  
+      #location:after {content:"";display:block;clear:both;}
+
+      #location .path{margin:0px; float:left; padding-right:46px; }
+      #location .path ul {margin:0px; padding:0px;}
+      #location .path ul li {float:left; display:inline; background:url('/hsidc/gmi/cni/lnb_bul.png') no-repeat left 45%; color:#555; padding-left:16px; margin-left:12px;}
+      #location .path ul li.home { width:17px; height:17px; background:url('/hsidc/gmi/cni/icon_home.png') no-repeat left 4px; padding-top:30px; }
+
+	  #location .path ul li:last-child { text-decoration:underline; color:#111;  }
+      
+      #location .path span.navi_home,
+      #location .path a.navi_home,
+      #location .path a.navi_home:link,
+      #location .path a.navi_home:visited{font-size:0px;}
+      #location .path a.navi_home:before,
+      #location .path span.navi_home:before{display:none}
+	  
+	  
+	  #location .btn{display:inline-block; position:absolute; top:-5px; right:0px; width:auto;}
+	  #location .btn:after {content:"";display:block;visibility:hidden;clear:both;} 
+
+	  #location .btn_print{display:inline-block;float:left;overflow:hidden;width:34px;height:34px;margin-top:0px;background:url('/hsidc/gmi/cni/location_ico.png') no-repeat 0px 0;font-size:0;line-height:0;}
+	  #location a.btn_print:hover,
+	  #location a.btn_print:focus {background-position:-33px 0;}
+	  #location .path{position:relative;top:auto;left:auto;}
+
+
+
+
+
+	   
+	  #lnb { margin:-27px auto 0px auto; padding:0px; width:1250px; z-index:80; height:50px; position:relative;}
+	  #lnb:after { clear: both;  content: ""; display: block;}
+	  #lnb ul {margin:0px; padding:0px; width:100%;}		
+	  #lnb ul li { float: left; display:inline; width:100%;} 
+	  #lnb ul li.part2 { width:50%;} 
+	  #lnb ul li.part3 { width:33.3%;} 
+	  #lnb ul li.part4 { width:25%;} 
+	  #lnb ul li.part6 { width:16.6%;} 
+	  #lnb ul li.part7 { width:14.2%;} 
+	  #lnb ul li a { margin-left:-1px; background: #fff; font-size:120%; border:1px solid #d3d3d3; color:#222; height:50px; line-height:50px;  display: block;  font-weight: 500; text-align:center; }	   
+	  #lnb ul li.active a,
+	  #lnb ul li a:hover, 
+	  #lnb ul li a:active, 
+	  #lnb ul li a:focus { transition:all .3s ease;  background:#0e71b8; color:#fff; border:1px solid #0764a7; font-weight:500;} /* on */
+	  
+
+		
+	  /* 본문타이틀 */ 
+	  .body_title { text-align:center; padding:49px 0px 31px 0px; width:1250px; margin:0px auto; position:relative; overflow:hidden;}
+	  .body_title:after { clear: both;  content: ""; display: block;}
+      .body_title  h3 { display: inline-block; letter-spacing:-2px; padding:0px;vertical-align:top; float:left; font-size:220%; font-weight:600; color:#000; }  
+	  
+
+   
+   
+  
+
+
+
+/*****************1320이하******************************************/
+@media all and (max-width:1320px){
+
+#body_head_outer { width:1000px; }
+.body_title {width:1000px; }
+#lnb { width:1000px;}
+
+#lnb ul li.part7 { width:auto;} 
+#lnb ul li.part7 a { padding:0px 36px 0px 35px;}
+ 
+}
+
+
+
+/*****************1040이하******************************************/
+@media all and (max-width:1040px){
+
+#body_head_outer {max-width:94%;}
+#lnb { max-width:94%;}
+.body_title {max-width:94%;}
+.body_title  h3 { font-size:160%; }
+#location { top:195px;}
+#location .btn_print { display:none;}
+#location .path { padding-right:0px;}
+
+ #lnb ul li.part6 { width:33.3%;}
+ #lnb ul li.part7 { width:33.3%;}
+ #lnb ul li a {margin-top:-1px; }	  
+ 
+}
+
+
+/*****************800이하******************************************/
+@media all and (max-width:800px){ 
+
+
+ 
+  	
+ 
+
+} 
+ 
+
+/*****************640이하******************************************/
+@media all and (max-width:640px){
+
+#svisual {height:58px;}	
+#svisual .bg_visual{ height:58px; }	
+
+ 
+ 
+#body_head_outer { margin:-56px auto 0px auto; height:58px;}	
+    .body_head{ margin-bottom:0px; margin:0px auto;}
+    
+	
+	.body_head h2 { font-size:180%; line-height:56px;  padding:0px; background:none;  text-align:center; letter-spacing:0;}
+	.body_head h2 span { display:none;}
+	
+	
+	  /* 페이지경로*/   
+      #location {  top:70px;  font-size:90%; }	      
+      #location .path{ padding-right:0px;}
+	  #location .btn_print{display:none;}
+	  
+	  
+	  #location .path ul li { }
+	  
+	  
+	  
+	  #lnb { margin:70px auto 0px auto; height:auto; }
+	 
+	  #lnb ul li { width:50%;} 
+      #lnb ul li.part2,
+	  #lnb ul li.part3,
+	  #lnb ul li.part4,
+	  #lnb ul li.part6,
+	  #lnb ul li.part7 { width:100%;} 
+	  #lnb ul li a { margin-left:-1px; margin-top:-1px; font-size:95%; height:43px; line-height:43px; }  
+
+		
+		
+	  /* 본문타이틀 */ 
+	  .body_title {  padding:35px 0px 39px 0px;}	  
+      .body_title  h3 { font-size:160%; }  
+
+
+
+}
+
+
+
+/*****************320이하******************************************/
+@media all and (max-width:480px){
+
+ 
+
+   
+
+}
