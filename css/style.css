@@ -1,0 +1,124 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* scroll down text */
+.cd-image-replace {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+}
+
+
+/* Vertical navigation */
+.cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+}
+.cd-vertical-nav a {
+  display: block;
+  padding: 8px;
+  color: #3a2c41;
+  font-weight: bold;
+}
+.cd-vertical-nav a.active {
+  color: #c0a672;
+}
+
+
+
+/* Content Sections - basic style */
+.cd-section {
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+
+.cd-section > div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.cd-scroll-down {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  background: url('../img/arrow_bottom.png') no-repeat center center;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .cd-vertical-nav {
+    right: 0;
+    top:45%;
+    bottom: auto;
+	margin-top:-50px;
+    height: 100vh;
+  }
+  
+  .cd-vertical-nav a {
+    position: relative;
+    padding: 20px;
+    margin: 0px auto;
+    border-bottom: none;
+    font-size: 1.2rem;
+    color: #eaf2e3;
+	text-decoration:none;
+  }
+
+  .cd-vertical-nav a.active { color: #eaf2e3; }
+  .cd-vertical-nav a::before, .cd-vertical-nav a::after {
+    /* used to create the filled circle and the background icon */
+    content: '';
+    position: absolute;
+    left: 50%;
+    /* Force Hardware Acceleration */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .cd-vertical-nav a::before {
+    /* filled circle */
+    top: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #eaf2e3;
+    -webkit-transform: translateX(-50%) scale(0.25);
+    -moz-transform: translateX(-50%) scale(0.25);
+    -ms-transform: translateX(-50%) scale(0.25);
+    -o-transform: translateX(-50%) scale(0.25);
+    transform: translateX(-50%) scale(0.25);
+    -webkit-transition: -webkit-transform 0.4s, background-color 0.2s;
+    -moz-transition: -moz-transform 0.4s, background-color 0.2s;
+    transition: transform 0.4s, background-color 0.2s;
+  }
+
+  .cd-vertical-nav a.active::before, 
+  .no-touch .cd-vertical-nav a:hover::before { background-color: #c0a672;  }
+
+  .cd-section h1, .cd-section h2 { font-size: 6rem; }
+  .cd-section p { font-size: 3rem; }
+}
