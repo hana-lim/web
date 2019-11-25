@@ -304,6 +304,7 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
 @media all and (max-width:1320px){
 
 
+.swiper-container2 .swiper-slide .img_box { width:100%; height:auto; }
 
 
 
