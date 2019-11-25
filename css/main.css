@@ -334,7 +334,7 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
 .main_bg7 { background-size:contain; background-position:0% 50%; }
 
 
-.swiper-container2 .swiper-slide .img_box { width:80%; height:auto; }
+.swiper-container2 .swiper-slide .img_box { width:80%; border:1px solid red; }
 
 
 }
@@ -398,7 +398,7 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
 .inr_box li { font-size:90%;  }
 
 .swiper-container2 .swiper-slide {margin-top:130px;}
-.swiper-container2 .swiper-slide .img_box { width:80%; height:450px; }
+.swiper-container2 .swiper-slide .img_box { width:80%;  }
 
 }
 
