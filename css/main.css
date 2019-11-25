@@ -342,7 +342,7 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
 /***************** 800이하 ******************************************/
 @media all and (max-width:800px){
 
-.section1_bg { background-position:0% 50%;  }
+.section1_bg { background-position:50% 50%;  }
 
 .section1 .main_text h2,
 .section1 .main_text p { font-size:230%;}
@@ -352,10 +352,7 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
  h3 { font-size:130%;}
 
 
-.career_box > ul { padding:0px 0px 0px 38%; }
-.career_box .year dt {font-size:150%; }
-
-
+.swiper-container2 .swiper-slide .img_box { width:80%; height:auto; }
 }
 
 
