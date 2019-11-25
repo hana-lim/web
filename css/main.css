@@ -352,7 +352,8 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
  h3 { font-size:130%;}
 
 
-.swiper-container2 .swiper-slide .img_box { width:80%; height:auto; }
+.swiper-container2 .swiper-slide .img_box { width:80%; height:750px; }
+
 }
 
 
