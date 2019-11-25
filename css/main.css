@@ -308,6 +308,7 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
 
 
 
+
 }
 
 /***************** 1040이하(태블릿) ******************************************/
@@ -332,6 +333,8 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
 .main_bg7 { background-size:contain; background-position:0% 50%; }
 
 
+.swiper-container2 .swiper-slide .img_box { width:80%; height:auto; }
+
 
 }
 
@@ -351,9 +354,7 @@ h3:after{ display: block; content: ''; margin: 0 auto; margin-top:10px; width:40
 
  h3 { font-size:130%;}
 
-.swiper-container2 .swiper-slide .img_box { width:80%;  }
 
-/*.swiper-container2 .swiper-slide .img_box { width:80%; height:750px; }*/
 
 }
 
